@@ -1,0 +1,92 @@
+header {
+    background-color: #424242;
+}
+
+.menu-icon {
+  display: block;
+  float: right;
+}
+
+.title-bar {
+  position: relative;
+  z-index: 2;
+  background-color: #424242;
+  color: #ffffff;
+}
+
+.menu .menu-text {
+    color: #ffffff;
+}
+
+.is-drilldown {
+    background-color: #424242;
+}
+
+.is-drilldown li {
+    width: 100vh;
+} 
+
+.top-bar, .top-bar ul {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #424242 !important;
+}
+
+.menu .active > a {
+    color: #000000;
+    background-color: #424242;
+}
+
+.menu > li > a {
+    color: #ffffff !important;
+    background-color: #424242;
+}
+
+.menu > li > a:hover {
+    color: #00bcd4 !important;
+}
+
+/* Enlarge the width of menu title items 
+.dropdown.menu > li >a {
+    padding-right: 10rem !important;
+} */
+
+/* Enlarge the dropdown menu iems 
+.dropdown .is-dropdown-submenu a {
+    padding-right: 9rem;
+} */
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+    border-color: #ffffff transparent transparent;
+}
+
+.dropdown.menu>li.opens-left>.is-dropdown-submenu {
+    right: auto;
+}
+
+.drilldown .is-drilldown-submenu-parent>a::after {
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.drilldown .js-drilldown-back>a::before {
+    border-color: transparent #ffffff transparent transparent; 
+}
+
+.float-start::marker, .breadcrumb-item::marker {
+    font-size: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .overlay-menu {
+    position: absolute;
+    outline: 1px solid red;
+    background-color: inherit;
+    left: 0;
+    top: 0;
+    padding: 0;
+    padding-top: 2.5em;
+    z-index: 1;
+  }
+
+}
